@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+	scroll-behavior: smooth;
+}
+p {
+	font-size: 16px;
+}
+.sidenav {
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: #8b5cf6;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.xMarkPosition {
+	position: absolute;
+	right: 2rem;
+	top: 2rem;
+}
+
+.overlay {
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	width: 100vw;
+	height: 500%;
+}
+
+@keyframes transformIn {
+	0% {
+		transform: scale(1) rotate(0deg);
+	}
+	50% {
+		transform: scale(1.25) rotate(360deg);
+	}
+	100% {
+		transform: scale(1) rotate(0deg);
+	}
+}
+
+.react-animation:hover {
+	animation-name: transformIn;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.projects-h1:after {
+	background-color: #8b5cf6;
+	content: "";
+	display: inline-block;
+	height: 2px;
+	position: relative;
+	vertical-align: middle;
+	width: 40%;
+}
+
+.img_projetos {
+	width: 100%;
+	height: 100%;
+}
